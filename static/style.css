@@ -1,0 +1,108 @@
+body {
+    background-color: #fff5ee !important;
+    margin: 0;
+    font-family: Visby, sans-serif !important;
+    overflow-y: hidden;
+}
+
+/*#prompt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}*/
+
+#heading {
+    font-family: NYCD, sans-serif;
+    font-size: 75px;
+}
+
+/*Navigation*/
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    width: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #bcd4e6;
+    overflow-x: hidden;
+    transition: 0.25s;
+    padding-top: 10px;
+}
+
+.sidenav.open {
+    width: 200px;
+}
+
+.sidenav a {
+    margin: 0 0 20px;
+    text-decoration: none !important;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+}
+
+#closeBtn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 20px;
+    background: #bcd4e6;
+    transition: .25s;
+    text-decoration: none;
+    margin-left: 0;
+}
+
+#closeBtn:hover {
+    background:#74a4c9;
+}
+
+#closeBtn.open {
+    margin-left: 200px;
+}
+
+#caret {
+    -moz-transition: all .25s linear;
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+#caret.open {
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/*Overwrite*/
+#promptField > button {
+    background: #bcd4e6;
+    border-color: #bcd4e6;
+}
+
+#promptField > button:focus {
+    box-shadow: none;
+    border-color: #74a4c9;
+}
+
+#promptField > input:focus {
+    box-shadow: none;
+    border-color: #bcd4e6;
+}
+
+/* FONTS */
+@font-face {
+    font-family: Visby;
+    src: url(fonts/VisbyCF-Medium.ttf);
+}
+
+@font-face {
+    font-family: NYCD;
+    src: url(fonts/NothingYouCouldDo-Regular.ttf);
+}

@@ -1,0 +1,26 @@
+{% extends 'master.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<a href="javascript:void(0)" id="closeBtn" onclick="interactNav()"><i id="caret" class="fas fa-caret-right"></i></a>
+<div id="menu" class="sidenav">
+    <a href="about.html">
+        <span class="text-center">About</span>
+    </a>
+</div>
+<div id="prompt" class="container d-flex flex-column">
+    <img src="static/img/flower-crop.png" class="w-50 mx-auto mt-5">
+    <h1 id="heading" class="text-center">Carmen Ex Machina</h1>
+    <form class="input-group mt-5 w-50 mx-auto" id="promptField">
+        <input class="form-control text-center" placeholder="Enter a topic or a prompt to start">
+        <button data-hash="#generate" class="btn btn-primary bold" type="button">&raquo;</button>
+    </form>
+</div>
+<div id="generate" class="container d-flex flex-column">
+    <img src="static/img/flower-crop.png" class="w-50 mx-auto mt-5">
+    <h1 id="heading" class="text-center">Carmen Ex Machina</h1>
+</div>
+{% endblock %}
